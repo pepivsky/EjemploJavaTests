@@ -19,7 +19,7 @@ public class PlayerTest {
     @Test
     public void looses_when_dice_number_is_too_low() {
         Dice dice = Mockito.mock(Dice.class);
-        Mockito.when(dice.roll()).thenReturn(2);
+        Mockito.when(dice.roll()).thenReturn(2); // cuando se llame al metodo entonces siempre debe retornar 2
 
         Player player = new Player(dice, 4);
         //assertEquals(false, player.play());
